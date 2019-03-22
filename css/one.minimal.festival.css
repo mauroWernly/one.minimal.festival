@@ -22,10 +22,42 @@ p.title-text{
 span.date-text{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
 }
 
 .container-date{
     margin-top: 150px;
+}
+
+.footer-left{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-top: 40px;
+}
+
+.buy-btn{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: transparent;
+}
+.buy-btn:hover{
+    font-size: 18px;
+    transition: all .3s;
+}
+
+.buy-btn::after{
+    content: '';
+    display: block;
+    background-color: #ffffff;
+    height: 3px;
+    width: 15px;
 }
