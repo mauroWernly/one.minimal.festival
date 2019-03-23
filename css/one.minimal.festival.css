@@ -96,7 +96,7 @@ span.date-text{
     right: 0;
     left: auto;
     top: 0;
-    z-index: 2;
+    z-index: 100;
 }
 
 .vh-row{
@@ -104,31 +104,43 @@ span.date-text{
 }
 
 .cinema-card-1{
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
+    background-color: #0e0e0e;
     border: solid 1px #979696;
-    flex-direction: column;
+    padding: 10px;
+    box-shadow: 15px 15px 0px 0px rgb(212, 163, 49), 15px 15px 0px 1px rgba(255,255,255,.5);
+    z-index: 90;
 }
 
-.cinema-title{
+.cinema-card-2{
+    width: 200px;
+    height: 250px;
+    background-color: #0e0e0e;
+    border: solid 1px #979696;
+    padding: 10px;
+    box-shadow: 15px 15px 0px 0px rgb(78, 124, 67), 15px 15px 0px 1px rgba(255,255,255,.5);
+    z-index: 80;
+}
+
+.card-title{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 30px;
     font-weight: 600;
-    margin-top: 15px;
 }
 
 .bottom-card-container{
     position: relative;
-    height: 100%;
+    width: 50%;
 }
 
 .cinema-card-left-text{
     font-family: 'Montserrat', sans-serif;
     color: #979696;
     font-size: 13px;
-    position: absolute;
-    bottom: 5px;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .cinema-card-day{
@@ -141,24 +153,56 @@ span.date-text{
 .movie-title{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 20px;
-    position: absolute;
-    max-width: 110px;
-    top: auto;
-    left: auto;
-    right: 15px;
-    bottom: 40px;
-    text-align: end;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.music-lorem{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 140px;
+    margin-top: 10px;
+}
+
+.movie-lorem{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 140px;
+    margin-top: 10px;
 }
 
 .cinema-card-hour{
     font-family: 'Montserrat', sans-serif;
     color: #979696;
     font-size: 14px;
-    position: absolute;
-    right: 15px;
-    top: auto;
-    bottom: auto;
-    left: auto;
+    margin-top: auto;
 }
 
+.right-card-container{
+    width: 50%;
+    max-width: 110px;
+    margin-left: auto;
+}
+
+.top-card-container{
+    width: 100%;
+}
+
+.d1{
+    position: absolute;
+}
+
+.music-title{
+    font-size: 25px;
+    text-align: end;
+}
+
+.right-card-container.right-card-container-music{
+    width: 100%;
+    max-width: 100%;
+}
