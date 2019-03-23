@@ -109,7 +109,7 @@ span.date-text{
     background-color: #0e0e0e;
     border: solid 1px #979696;
     padding: 10px;
-    box-shadow: 15px 15px 0px 0px rgb(212, 163, 49), 15px 15px 0px 1px rgba(255,255,255,.5);
+    box-shadow: 15px 15px 0px 0px rgb(248, 238, 41), 15px 15px 0px 1px rgba(255,255,255,.5);
     z-index: 90;
 }
 
@@ -119,7 +119,7 @@ span.date-text{
     background-color: #0e0e0e;
     border: solid 1px #979696;
     padding: 10px;
-    box-shadow: 15px 15px 0px 0px rgb(78, 124, 67), 15px 15px 0px 1px rgba(255,255,255,.5);
+    box-shadow: 15px 15px 0px 0px rgb(102, 138, 106), 15px 15px 0px 1px rgba(255,255,255,.5);
     z-index: 80;
 }
 
@@ -131,6 +131,15 @@ span.date-text{
     padding: 10px;
     box-shadow: 10px 8px 0px 0px rgb(213, 58, 56), 10px 8px 0px 1px rgba(255,255,255,.5), 20px 20px 0px 0px rgb(162, 51, 51), 20px 20px 0px 1px rgba(255,255,255,.5);
     z-index: 80;
+}
+
+.design-card-1{
+    width: 200px;
+    height: 260px;
+    background-color: #0e0e0e;
+    border: solid 1px #979696;
+    padding: 10px;
+    box-shadow: 10px 8px 0px 0px rgb(215, 146, 165), 10px 8px 0px 1px rgba(255,255,255,.5);
 }
 
 .card-title{
@@ -203,7 +212,7 @@ span.date-text{
     width: 100%;
 }
 
-.d1, .d2, .d3{
+.d1, .d2, .d3, .d4{
     position: absolute;
 }
 
@@ -223,9 +232,16 @@ span.date-text{
 
 .d3{
     top: auto;
-    bottom: 0;
+    bottom: -1px;
     right: auto;
     left: -90px;
+}
+
+.d4{
+    top: auto;
+    bottom: 70px;
+    right: auto;
+    left: -250px;
 }
 
 .music-title{
@@ -243,4 +259,8 @@ span.date-text{
     max-width: 100%;
     margin-left: auto;
     margin-bottom: 25px;
+}
+
+.patch-hidden{
+    overflow: hidden;
 }
