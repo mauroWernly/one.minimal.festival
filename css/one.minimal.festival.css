@@ -48,6 +48,7 @@ span.date-text{
     outline: none;
     box-shadow: none;
     border: transparent;
+    z-index: 110;
 }
 .buy-btn:hover{
     font-size: 18px;
@@ -214,6 +215,7 @@ span.date-text{
 
 .d1, .d2, .d3, .d4{
     position: absolute;
+    transition: all 1s cubic-bezier(0.860, 0.000, 0.070, 1.000), box-shadow 1s cubic-bezier(0.860, 0.000, 0.070, 1.000); 
 }
 
 .d1{
@@ -223,11 +225,19 @@ span.date-text{
     bottom: auto;
 }
 
+.card-container:hover .d1 {
+    top: -320px;
+}
+
 .d2{
     top: auto;
     left: auto;
     bottom: 100px;
     right: 120px;
+}
+
+.card-container:hover .d2 {
+    bottom: 680px;
 }
 
 .d3{
@@ -237,11 +247,19 @@ span.date-text{
     left: -90px;
 }
 
+.card-container:hover .d3 {
+    bottom: 680px;
+}
+
 .d4{
     top: auto;
     bottom: 70px;
     right: auto;
     left: -250px;
+}
+
+.card-container:hover .d4 {
+    bottom: 680px;
 }
 
 .music-title{
