@@ -113,13 +113,23 @@ span.date-text{
     z-index: 90;
 }
 
-.cinema-card-2{
+.music-card-1{
     width: 200px;
     height: 250px;
     background-color: #0e0e0e;
     border: solid 1px #979696;
     padding: 10px;
     box-shadow: 15px 15px 0px 0px rgb(78, 124, 67), 15px 15px 0px 1px rgba(255,255,255,.5);
+    z-index: 80;
+}
+
+.art-card-1{
+    width: 235px;
+    height: 250px;
+    background-color: #0e0e0e;
+    border: solid 1px #979696;
+    padding: 10px;
+    box-shadow: 10px 8px 0px 0px rgb(213, 58, 56), 10px 8px 0px 1px rgba(255,255,255,.5), 20px 20px 0px 0px rgb(162, 51, 51), 20px 20px 0px 1px rgba(255,255,255,.5);
     z-index: 80;
 }
 
@@ -193,8 +203,29 @@ span.date-text{
     width: 100%;
 }
 
-.d1{
+.d1, .d2, .d3{
     position: absolute;
+}
+
+.d1{
+    top: 60px;
+    left: auto;
+    right: 260px;
+    bottom: auto;
+}
+
+.d2{
+    top: auto;
+    left: auto;
+    bottom: 100px;
+    right: 120px;
+}
+
+.d3{
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: -90px;
 }
 
 .music-title{
@@ -205,4 +236,11 @@ span.date-text{
 .right-card-container.right-card-container-music{
     width: 100%;
     max-width: 100%;
+}
+
+.right-card-container.right-card-container-art{
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-bottom: 25px;
 }
