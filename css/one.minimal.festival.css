@@ -107,6 +107,7 @@ span.date-text{
     width: 220px;
     height: 220px;
     border: solid 1px #979696;
+    flex-direction: column;
 }
 
 .cinema-title{
@@ -114,12 +115,20 @@ span.date-text{
     color: #ffffff;
     font-size: 30px;
     font-weight: 600;
+    margin-top: 15px;
+}
+
+.bottom-card-container{
+    position: relative;
+    height: 100%;
 }
 
 .cinema-card-left-text{
     font-family: 'Montserrat', sans-serif;
-    color:  #979696;
-    font-size: 15px;
+    color: #979696;
+    font-size: 13px;
+    position: absolute;
+    bottom: 5px;
 }
 
 .cinema-card-day{
@@ -132,5 +141,24 @@ span.date-text{
 .movie-title{
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 20px;
+    position: absolute;
+    max-width: 110px;
+    top: auto;
+    left: auto;
+    right: 15px;
+    bottom: 40px;
+    text-align: end;
 }
+
+.cinema-card-hour{
+    font-family: 'Montserrat', sans-serif;
+    color: #979696;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: auto;
+    bottom: auto;
+    left: auto;
+}
+
